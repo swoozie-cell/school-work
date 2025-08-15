@@ -1,0 +1,25 @@
+// Lab 3 - Q1 Port Range Checker
+// Name: ____emmanuel kiptoo___________________
+// Date: _____15 august 2025__________________
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int port ;
+	
+	cout<<"enter port number : " ;
+	cin >> port;
+	
+	if ((port >= 14 && port <= 72) || (port > 103)) {
+        cout << "within range" ;
+    } else {
+        cout << "out of range" ;
+    }
+	
+	
+
+
+    return 0;
+}
