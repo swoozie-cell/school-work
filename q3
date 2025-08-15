@@ -1,0 +1,43 @@
+// Lab 3 - Q3 Commission Calculator
+// Name: _emmanuel kiptoo______________________
+// Date: _______15 august 2025________________
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    string name;
+	int ts ,cd   ;
+	float cr ;
+	 
+	 cout << "enter your name : ";
+	 cin >> name;
+	 
+	 cout << "enter your total sales :";
+	 cin >> ts;
+	 
+	 
+	 
+	 if ( ts>=20000 && ts<=80000){
+	 	cr=0.02;
+	 }if ( ts>=80001 && ts<=120000){
+	 	cr=0.05;
+	 }if ( ts>120001){
+	 	cr=0.1;
+		  }else{
+         cr=0;}
+		  
+		  
+	cd=ts*cr;
+		 
+	 cout<<"name:   "  << name<< "\n";
+	 cout<<"monthly sales:   "  << ts <<"\n";
+	 cout<<"comission Due: " << cd << "\n";
+	 //ts is total sales
+	 //cr is commision rate
+	 //cd is commision due
+    
+
+    return 0;
+}
