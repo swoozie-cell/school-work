@@ -1,0 +1,25 @@
+// Lab 3 - Q2 Divisibility Test
+// Name: _emmanuel kiptooo______________________
+// Date: _15 august 2025______________________
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int ans  ;
+	
+	cout << "input number ";
+	cin>>ans;
+	 
+	 if ( ans % 5 == 0 && ans % 11==0){
+	 	cout<<" divisible";
+	 	
+	 }else{ 
+	 cout<<"not divisible";
+	 }
+	
+    // ans is answer 
+
+    return 0;
+}
