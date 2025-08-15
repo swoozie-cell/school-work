@@ -1,0 +1,35 @@
+// Lab 3 - Q4 Cloud Billing System
+// Name: __emmanuel kiptoo_____________________
+// Date: ____15 august 2025___________________
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    double gb , bill ,sc ,total;
+	
+	cout << "input cloud service usage (gb) consumed : ";
+	cin >> gb ;
+	
+	if (gb=50){
+		bill = gb * 10;
+	}else if ( gb>=50 && gb<=100){
+	bill=(gb*10) + ((gb-50) * 20);}
+	else if ( gb >=100 && gb<=150){
+		bill = ((gb * 10) + ((gb-50) + ((gb - 50) * 30)));
+	}else if (gb>=250){
+		bill =((gb * 10) + ((gb-50) + ((gb - 50) * 30) + ((gb-50) * 50)));
+	}
+	sc = bill * 0.02 ;
+	total = sc + bill;
+	
+	cout << "subtotal : " << bill << "\n";
+	cout << "surcharge : " << sc << "\n";
+	cout << "total : " << total << "\n";
+	// sc is surcharge 
+	
+    
+
+    return 0;
+}
